@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: film_recommender_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/usr/src/app/app # Kodda değişiklik yaptığınızda anında yansıması için
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build: ./frontend
+    container_name: film_recommender_frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend

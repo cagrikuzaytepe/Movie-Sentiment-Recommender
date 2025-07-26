@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Based Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>🎬 Movie Recommender Engine</h1>
+            </div>
+            <p>Describe your mood or what you want to watch, and we'll find the perfect movies for you!</p>
+        </header>
+        <main>
+            <form id="recommendation-form">
+                <textarea id="user-input" placeholder="Example: I want to see a mind-bending sci-fi movie set in space."
+                    required></textarea>
+                <button type="submit">Find Movies</button>
+            </form>
+            <div id="results-container">
+            </div>
+            <div id="error-message" class="hidden"></div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

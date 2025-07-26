@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+pandas
+torch
+transformers
+sentence-transformers
+faiss-cpu
+python-multipart
+scikit-learn
+sacremoses
+langdetect
